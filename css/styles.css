@@ -11,7 +11,7 @@ html {
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    border-color: ;
+    border-color: #dbe2ea;
     color: rgb(32, 31, 31);
     line-height: 1.5;
 
@@ -42,7 +42,7 @@ ul {
     --color-surface: #ffffff;
     --color-text: #1f2937;
     --color-text-soft: #4b5563;
-    --colo-border: #dbe2ea;
+    --color-border: #dbe2ea;
 
 
     --max-width: 1100px;
@@ -61,7 +61,7 @@ ul {
 
 /* Clase contenedor */
 .container {
-    width: min(100% - 32px, var(--mar-widt));
+    width: min(100% - 32px, var(--mar-width));
     margin: 0 auto;
 
 }
@@ -69,11 +69,77 @@ ul {
 /* Cabecera principal */
 .site-header {
     background-color: var(--color-surdace);
-    border-bottom: 1px solid var (--color-border);
+    border-bottom: 1px solid var(--color-border);
     padding: var(--space-sm) 0;
 }
 
 .site-header .container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    gap: var(--space-md);
+
+}
+
+/* Estilo logo */
+.logo {
+    margin: 0;
+    font-size: 1.5rem;
+    color: var(--color-primary-dark);
+}
+
+/* Contenedor de menu */
+.menu {
+    display: flex;
+    gap: var(--space-md);
+}
+
+/* Contenedor de menu */
+.menu a {
+    font-weight: 600;
+    color: var(--color-text-soft);
+    padding: var(--space-xs)0;
+}
+
+/* Estado de los enlaces */
+.menu a:haver {
+    color: var(--color-primary)
+}
+
+
+
+.hero {
+    padding: var(--space-xl) 0;
+}
+
+.hero h2 {
+
+    margin-top: 0;
+    margin-bottom: var(--space-sm);
+    font-size: 2.5rem;
+    max-width: 700px;
+    color: var(--color-primary-dark);
+
+}
+
+
+.hero p {
+
+    margin-top: 0;
+    margin-bottom: var(--space-md);
+    max-width: 680px;
+    color: var(--color-text-soft);
+    font-size: 1.1rem;
+}
+
+.button {
+    display: inline-block;
+    background-color: var(--color-primary);
+    color: #ffffff;
+    padding: 12px 20px;
+    border-radius: var(--radius-sm);
+    font-weight: 700;
+
+}.button: hover {
+  ::backdrop-color: var(color-primary dark);  
 }
