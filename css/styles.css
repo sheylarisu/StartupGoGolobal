@@ -56,7 +56,9 @@ ul {
 
     --radius-sm: 8px;
     --radius-md: 16px;
-    --radius-lg: 24px --shadow-sof: o 1opx 30px rgba(15, 23, 42, 0.08);
+    --radius-lg: 24p;
+    
+    --shadow-sof: 0 10px 30px rgba(15, 23, 42, 0.08);
 }
 
 /* Clase contenedor */
@@ -140,6 +142,26 @@ ul {
     border-radius: var(--radius-sm);
     font-weight: 700;
 
-}.button: hover {
-  ::backdrop-color: var(color-primary dark);  
+}
+
+.button:hover {
+    background-color: var(--color-primary-dark);
+}
+
+.services {
+    padding: var(--radius-lg);
+}
+
+.services h2 {
+    margin-top: 0;
+    margin-bottom: var(--space-md);
+}
+
+.services-card {
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: van(--space-md);
+    margin-bottom: var(--space-md);
+    box-shadow: var(--shadow-soft);
 }
