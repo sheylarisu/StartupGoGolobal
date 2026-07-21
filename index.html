@@ -4,21 +4,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-        <Section>Startup Go Global | Soluciones digitales para empresas</Section>
-    </title>
+    <title>Startup Go Global | Soluciones digitales para empresas</title>
+<link rel="stylesheet" href="css/styles.css">   
 </head>
 
 <body>
     <header>
-        <h1> Startup Go Global</h1>
+        <h1>Startup Go Global</h1>
         <nav>
             <ul>
-                <li><a href="#inicio">INICIO</a></li>
-                <li><a href="#servicios">SERVICIO</a></li>
-                <li><a href="#contacto">CONTACTO<a></li>
+                <li><a href="#inicio">Incio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
+        </nav>
     </header>
+
+    <main>
+        <!-- Comentario -->
+        <section id="inicio">
+            <h2>Impulsamos la presencia digital de tu empresa</h2>
+            <p>
+                En StartupGo Global ayudamos a marcas y negocios a crear experiencias web claras, modernas  preparadas para crecer en varios idiomas.
+            </p>
+        </section>
+    </main>
+
+    <section id="servicios">
+        <h2>Servicios</h2>
+        <article>
+            <h3>Diseño y maquetación web</h3>
+            <p>
+                Creamos interfaces claras, accesibles  adaptadas a distintos dispositivos.
+            </p>
+        </article>
+
+        <article>
+            <h3>Internacionalización de contenidos</h3>
+            <p>Preparamos sitios web para trabajar de forma ordenada en varios idiomas</p>
+        </article>
+
+        <article>
+            <h3>Optimización y mejora de contenidos</h3>
+            <p>Revisamos estructura, calidad del contenido y experiencia de usuario</p>
+        </article>
+
+    </section>
+
+    <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Cuéntanos que necesita tu empresa y te responderemos lo antes posible</p>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Solicita información sobre nuestros servicios</legend>
+
+                <div>
+                    <label for="name">Nombre completo</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email" required aria-describedby="ayuda-email">
+                    <small id="ayuda-email">Introduce un correo válido, por ejemplo nombre@empresa.com</small>
+                </div>
+                <div>
+                    <label for="company">Nombre empresa</label>
+                    <input type="text" id="company" name="company" required>
+                </div>
+                <div>
+                    <label for="servicio">Servicio de interés</label>
+                    <select name="servicio" id="servicio">
+                        <option value="">Seleciona una opción</option>
+                        <option value="maquetacion">Diseño y maquetación web</option>
+                        <option value="i18n">Internacionalización de contenido</option>
+                        <option value="optimizacion">Optimización y mejora continua</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="mensaje">Mensaje</label>
+                    <textarea name="mensaje" id="mensaje" rows="5" required></textarea>
+                </div>
+
+                <button type="submit">Enviar solicitud</button>
+            </fieldset>
+        </form>
+    
+    </section>
+
+    <footer>
+        <p>&copy; 2026 StartupGo Global. Todos los derechos reservados.</p>
+    </footer>
 </body>
 
 </html>
